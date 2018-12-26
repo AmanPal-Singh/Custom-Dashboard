@@ -1,0 +1,188 @@
+.settings {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	transform: translateX(-100%);
+	transition: transform 1s;
+}
+.settings-open.settings{
+	transform: none;
+}
+button {
+   height: 30px;
+   width: 70px;
+   background: none; /* This removes the default background */
+   color: #FFFFFF;
+   border: 1px solid #FFFFFF;
+   border-radius: 50px; /* This gives our button rounded edges */
+   font-size: 12px;
+   cursor: pointer;
+}
+form {
+   padding-top: 20px;
+}
+.welcome-container {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   top: 25vh;
+}
+.welcome{
+   font-family: 'Annie Use Your Telescope', sans-serif;
+   font-size: 4vh;
+   color: #ffffff;
+}
+.content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+body{
+	margin: 0px;
+	font-family: 'Annie Use Your Telescope'
+}
+html {
+   height: 100%;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+/* CLOCK */
+.clock-container {
+	display: flex;
+   justify-content: center;
+   align-content: center;
+   height: 20vh;
+}
+.clock {
+  height: 100px;
+  width: 100px;
+  background-color: rgba(0,0,0,0);
+  border-radius: 100%;
+  border: 3px solid #ffffff;
+  margin: auto;
+  position: absolute;
+  top: 20;
+  left: 0;
+  right: 0;
+}
+.twelve {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: #ffffff;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.three {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background: #ffffff;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+}
+.six {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: #ffffff;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.nine {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background: #ffffff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+}
+.center {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 100%;
+}
+#minutes {
+  position: absolute;
+  height: 30px;
+  width: 2px;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  top: 0px;
+  margin: auto;
+  background: #ffffff;
+  -webkit-transform-origin: bottom;
+}
+#hours {
+  position: absolute;
+  height: 15px;
+  width: 2px;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  top: 0px;
+  margin: auto;
+  background: #ffffff;
+  -webkit-transform-origin: bottom;
+}
+
+/* SHORTCUT BAR */
+.shortcut-container {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   bottom: 10vh;
+}
+.fa{
+  font-size: 5vh;
+  padding: 0;
+}
+.fab{
+  font-size: 5vh;
+  padding: 0;
+}
+.bar ul{
+  margin: 0;
+  padding: 0;
+}
+.bar li{
+  display: inline-block;
+  margin: 4px;
+  list-style: none;
+  padding: 0;
+}
+.bar li a{
+  color: white;
+  text-decoration: none;
+  font-size: 10vh;
+  transition: all ease-in-out 250ms;
+}
+.bar li a:hover{
+  color: #b9b9b9;
+}

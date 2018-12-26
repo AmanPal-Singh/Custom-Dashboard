@@ -1,0 +1,77 @@
+<!--  Custom Dash Board -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Custom Dash Board</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+	<!--- SETTING BUTTON -->
+	<div id="div_video">
+	<video autoplay muted loop id="myVideo">
+		<source id= "vidsource" src="background1.mp4" type="video/mp4">
+	</video> 
+	</div>
+
+
+	<div class="content">
+		<button id="settings-button">Settings</button>
+		<div class="settings" id="settings">
+		   <form class="name-form" id="name-form" action="#">
+		      <input class="name-input" type="text"
+		        id="name-input" placeholder="Type your name here...">
+		      <button type="submit" class="name-button">Add</button>
+		   </form>
+		   <!-- <button id="change-video" type="submit" class="video-button" onclick="setvideo('background.mp4');"> Video1 </button>
+		   <button id="change-video" type="submit" class="video-button" onclick="setvideo('background1.mp4');"> Video2 </button> -->
+		</div>
+
+		<div class="welcome-container">
+	    	<h2 class="welcome" id="welcome"></h2>
+		</div>
+
+		<div class="clock-container">
+			<div class="clock">
+	          <div id="hours"></div>
+	          <div id="minutes"></div>
+	          <div id="seconds"></div>
+	          <div class="three"></div>
+	          <div class="six"></div>
+	          <div class="nine"></div>
+	          <div class="twelve"></div>
+	          <div class="center"></div>
+	     	 </div>
+	    </div>
+
+	    <div class="shortcut-container">
+	    	<div class="bar">
+		    	<ul>
+					<li> <a href= "https://www.linkedin.com/"  target= "_blank"> <i class="fab fa-linkedin"></i> </a> </li>
+					<li> <a href= "https://github.com/"  target= "_blank"> <i class="fab fa-github"></i> </a> </li>
+					<li> <a href= "https://outlook.com"  target= "_blank"> <i class="fa fa-envelope-square"></i> </a> </li>
+					<li> <a href= "https://reddit.com"  target= "_blank"> <i class="fab fa-reddit"></i>
+					<li> <a href= "https://facebook.com"  target= "_blank"> <i class="fab fa-facebook"></i>
+					<li> <a href= "https://youtube.com"  target= "_blank"> <i class="fab fa-youtube"></i>
+					<li> <a href= "https://twitter.com"  target= "_blank"> <i class="fab fa-twitter"></i>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="main.js"></script>
+
+</body>
+
+</html>
+
+
